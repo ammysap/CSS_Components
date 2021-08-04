@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagestyle.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Getting started with CSS</h1>
+        <div class="discription">
+            <h4>
+                Starting with some HTML
+            </h4>
+            <p>
+                Our starting point is an HTML document. You can copy the code from below if you want to work on your own
+                computer. Save the code below as index.html in a folder on your machine.
+            </p>
+        </div>
+        
+    
+        <div class="discription-2">
+            <h4>
+                Note: 
+            </h4>
+            <p>
+                If you are reading this on a device or an environment where you can't easily create files, then don't worry — live code editors are provided below to allow you to write example code right here in the page.
+            </p>
+        </div>
+        <div class="discription">
+            <h4>
+                Adding CSS to our document
+            </h4>
+            <p>
+                The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
+            </p>
+        </div>
+        <div class="discription">
+            <p>
+                Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows that this is a CSS file.
+            </p>
+        </div>
+        <div class="discription">
+            <p>
+                To link styles.css to index.html add the following line somewhere inside the &lt;head&gt; of the HTML document:
+            </p>
+        </div>
+        <div class="discription-2">
+            <p>
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </p>
+        </div>
+        <div class="discription">
+            <p>
+                This &lt;link&gt; element tells the browser that we have a stylesheet, using the rel attribute, and the location of that stylesheet as the value of the href attribute. You can test that the CSS works by adding a rule to styles.css. Using your code editor add the following to your CSS file:
+            </p>
+        </div>
+        <div class="discription-2">
+            <pre>
+             h1{
+                    color: red;
+                }
+                  
+            </pre>
+        </div>
+        <div class="discription">
+            <p>
+                Save your HTML and CSS files and reload the page in a web browser. The level one heading at the top of the document should now be red. If that happens, congratulations — you have successfully applied some CSS to an HTML document. If that doesn't happen, carefully check that you've typed everything correctly.
+            </p>
+        </div>
+        <div class="discription">
+            <p>
+                You can continue to work in styles.css locally, or you can use our interactive editor below to continue with this tutorial. The interactive editor acts as if the CSS in the first panel is linked to the HTML document, just as we have with our document above.
+            </p>
+        </div>
+        <div class="discription">
+            <h4>
+                Styling HTML elements
+            </h4>
+            <p>
+                By making our heading red we have already demonstrated that we can target and style an HTML element. We do this by targeting an element selector — this is a selector that directly matches an HTML element name. To target all paragraphs in the document you would use the selector p. To turn all paragraphs green you would use:
+            </p>
+        </div>
+        <div class="discription-2">
+            <pre>
+                p {
+                    color: green;
+                  }
+                  
+            </pre>
+        </div>
+        <div class="discription">
+            <p>
+                You can target multiple selectors at once, by separating the selectors with a comma. If I want all paragraphs and all list items to be green my rule looks like this:
+            </p>
+        </div>
+        <div class="discription-2">
+            <pre>
+                p, li {
+                    color: green;
+                }
+                  
+            </pre>
+        </div>
+        <div class="discription">
+            <p>
+                Try this out in the interactive editor below (edit the code boxes), or in your local CSS document.
+            </p>
+        </div>
+    </div>
+
+
+</body>
